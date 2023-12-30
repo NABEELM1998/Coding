@@ -1,9 +1,11 @@
 package com.Nabeel.DataStructures.BinarySearch;
-
+/*
+To find a target in a Rotated Sorted Array
+ */
 public class RBS {
     public static void main(String[] args) {
     int [] arr = new int[]{4,5,6,7,9,0,1,2};
-    int target = 1;
+    int target = 5;
         System.out.println(search(arr,target));
     }
     public static int findPivot(int [] arr){
@@ -44,7 +46,7 @@ public class RBS {
         int pivot = findPivot(arr);
         if(target == arr[pivot]){
             return pivot;
-        } else if (target>arr[0]) {
+        } else if (target>=arr[0]) {
             return BinarySearch(arr,0,pivot,target);
         }
         else {
