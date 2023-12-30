@@ -1,6 +1,5 @@
 package com.Nabeel.DataStructures.Arrays.model;
 
-import com.Nabeel.DataStructures.Arrays.model.Employee;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -13,8 +12,8 @@ public class array {
         Employee [] employees = new Employee[]{new Employee(1,"Nabeel",100),new Employee(2,"sachin",3000)};
 //        System.out.println(Arrays.toString(employees));
 
-        for(int i =0; i<employees.length;i++){
-            System.out.println(employees[i]);
+        for (Employee employee : employees) {
+            System.out.println(employee);
         }
 
         int [] [] arr2 = new int [3][2];
@@ -29,15 +28,15 @@ public class array {
             }
         }
 
-        for (int i = 0; i < arr2.length; i++) {
-            for (int j = 0; j < arr2[i].length; j++) {
-                System.out.println(arr2[i][j]);
+        for (int[] ints : arr2) {
+            for (int anInt : ints) {
+                System.out.println(anInt);
             }
 
         }
-        for (int i = 0; i < arr2.length; i++) {
+        for (int[] ints : arr2) {
 
-                System.out.println(Arrays.toString(arr2[i]));
+            System.out.println(Arrays.toString(ints));
 
 
         }
